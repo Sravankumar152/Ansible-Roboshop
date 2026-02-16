@@ -24,11 +24,11 @@
 
     - name: Private address
       set_fact:
-        Private_ip: "{{ ec2_output.instances[0].Private_ip_address }}"
+        Private_ip: "{{ ec2_output.instances[0].private_ip_address }}"
 
     - name: public address
       set_fact:
-        public_ip: "{{ ec2_output.instance[0].Public_ip_address }}"
+        public_ip: "{{ ec2_output.instances[0].public_ip_address }}"
 
     - name: creating dns based on server type
       set_fact:
