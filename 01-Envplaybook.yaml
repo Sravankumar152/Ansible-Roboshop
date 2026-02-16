@@ -7,6 +7,7 @@
     securitygroup_id: sg-0439749f7885872a1
     zone_id: Z08836952WMRI129YL5JF
     zone: daws88.online
+    type: t3.micro
   
   tasks:
     - name: creating ec2 instance
@@ -15,6 +16,7 @@
         region: "{{ region }}"
         image_id: "{{ ami_id }}"
         security_group: "{{ securitygroup_id }}"
+        instance_type: "{{ type }}"
         wait: yes
         tags:
           name: "{{ instance_name }}"
