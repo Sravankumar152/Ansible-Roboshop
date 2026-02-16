@@ -9,7 +9,7 @@
   #   zone: daws88.online
   #   type: t3.micro
   vars_files:
-    vars.yaml
+    - vars.yaml
   
   tasks:
     - name: creating ec2 instance
