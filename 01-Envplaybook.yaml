@@ -1,13 +1,15 @@
 - name: creating ec2 instance and update dns
   hosts: localhost
   connection: local
-  vars:
-    ami_id: ami-0220d79f3f480ecf5
-    region: us-east-1
-    securitygroup_id: sg-0439749f7885872a1
-    zone_id: Z08836952WMRI129YL5JF
-    zone: daws88.online
-    type: t3.micro
+  # vars:
+  #   ami_id: ami-0220d79f3f480ecf5
+  #   region: us-east-1
+  #   securitygroup_id: sg-0439749f7885872a1
+  #   zone_id: Z08836952WMRI129YL5JF
+  #   zone: daws88.online
+  #   type: t3.micro
+  vars_files:
+    vars.yaml
   
   tasks:
     - name: creating ec2 instance
