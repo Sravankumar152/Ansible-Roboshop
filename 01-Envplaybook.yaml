@@ -14,7 +14,7 @@
         name: "{{ instance_name }}"
         region: "{{ region }}"
         image_id: "{{ ami_id }}"
-        securitygroup_id: "{{ securitygroup_id }}"
+        securitygroup: "{{ securitygroup_id }}"
         wait: yes
         tags:
           name: "{{ instance_name }}"
