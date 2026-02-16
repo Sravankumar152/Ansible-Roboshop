@@ -43,5 +43,5 @@
         overwrite: true
 
     - name: Show DNS record
-      debug:
+      ansible.builtin.debug:
         msg: "{{ instance_name }}.{{ zone }} → {{ dns_ip }}"
