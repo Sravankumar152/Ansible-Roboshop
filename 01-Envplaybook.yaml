@@ -1,0 +1,47 @@
+- name: creating ec2 instance and update dns
+  hosts: local
+  connection: local
+  vars:
+    ami_id: ami-0220d79f3f480ecf5
+    region: us-east-1
+    securitygroup_id: sg-0439749f7885872a1
+    zone_id: Z08836952WMRI129YL5JF
+    zone: daws88.online
+  
+  tasks:
+    - name: creating ec2 instance
+      amazon.aws.ec2_instance:
+        name: "{{ instance_name }}"
+        region: "{{ region }}"
+        ami_id: "{{ ami_id }}"
+        securitygroup_id: "{{ securitygroup_id }}"
+        wait: yes
+        tags:
+          name: "{{ instance_name }}"
+      register: ec2_output
+
+    - name: Private address
+      set_fact:
+        Private_ip: "{{ ec2_output.instances[0].Private_ip_address }}"
+
+    - name: public address
+      set_fact:
+        public_ip: "{{ ec2_output.instance[0].Public_ip_address }}"
+
+    - name: creating dns based on server type
+      set_fact:
+        dns_ip: "{{ public_ip if instance_name == 'frontend' else Private_ip }}"
+    
+    - name: creating dns
+      amazon.aws.route53:
+        state: present
+        zone: "{{ zone }}"
+        record: "{{ instance_name }}.{{ zone }}"
+        type: A
+        value: "{{ dns_ip }}"
+        ttl: 1
+        overwrite: true
+
+    - name: Show DNS record
+      debug:
+        msg: "{{ instance_name }}.{{ zone }} → {{ dns_ip }}"
