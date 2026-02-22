@@ -24,10 +24,12 @@
           name: "{{ item }}"
       loop: "{{ instance_name }}"
       register: ec2_output
+      tags: create
 
     - name: print ec2_output
       ansible.builtin.debug:
         msg: "{{ ec2_output }}"
+      tags: create
 
     - name: creating dns
       amazon.aws.route53:
@@ -39,12 +41,16 @@
         ttl: 1
         overwrite: true
       loop: "{{ ec2_output.results }}"
+      tags: create
 
     - name: Show created DNS records
       ansible.builtin.debug:
         msg: "{{ item.item }}.{{ zone }}"
       loop: "{{ ec2_output.results }}"
+      tags: create
 
+
+## deletion tasks
     - name: deleting ec2 instance
       amazon.aws.ec2_instance:
         name: "{{ item }}"
