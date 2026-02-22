@@ -19,6 +19,16 @@
         dest: /tmp/vars.yaml
         mode: get
         region: us-east-1
+        tags:
+          - create
+          - delete
+    
+    - name: load variables from vars.yaml
+      ansible.builtin.include_vars:
+        file: /tmp/vars.yaml
+      tags:
+        - create
+        - delete
 
     - name: creating ec2 instance
       amazon.aws.ec2_instance:
