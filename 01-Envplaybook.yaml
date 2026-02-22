@@ -11,7 +11,7 @@
   #   type: t3.micro
   # vars_files:
   #   - vars.yaml
-  pretasks:
+  pre_tasks:
     - name: Download vars file from s3
       amazon.aws.s3_object:
         bucket: secrets-ansible
