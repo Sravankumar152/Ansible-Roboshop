@@ -28,3 +28,26 @@
     - name: print ec2_output
       ansible.builtin.debug:
         msg: "{{ ec2_output }}"
+
+    - name: creating dns
+      amazon.aws.route53:
+        state: present
+        zone: "{{ zone }}"
+        record: "{{ item.item }}.{{ zone }}"
+        type: A
+        value: "{{ item.instances[0].public_ip_address if item.item == 'frontend' else item.instances[0].private_ip_address }}"
+        ttl: 1
+        overwrite: true
+      loop: "{{ ec2_output.results }}"
+
+    - name: Show created DNS records
+      ansible.builtin.debug:
+        msg: >
+          DNS Record Created:
+          {{ item.item }}.{{ zone }}
+          {{
+            item.instances[0].public_ip_address
+            if item.item == 'frontend'
+            else item.instances[0].private_ip_address
+          }}
+      loop: "{{ ec2_output.results }}"
