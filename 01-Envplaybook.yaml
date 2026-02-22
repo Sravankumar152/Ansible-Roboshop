@@ -1,6 +1,7 @@
 - name: creating ec2 instance and update dns
   hosts: all
   connection: local
+  become: yes
   # vars:
   #   ami_id: ami-0220d79f3f480ecf5
   #   region: us-east-1
