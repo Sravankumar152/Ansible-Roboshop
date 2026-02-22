@@ -42,5 +42,5 @@
 
     - name: Show created DNS records
       ansible.builtin.debug:
-        msg: "DNS Record Created: {{ item.item }}.{{ zone }}"
+        msg: "{{ item.item }}.{{ zone }}"
       loop: "{{ ec2_output.results }}"
