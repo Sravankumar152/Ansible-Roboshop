@@ -8,10 +8,18 @@
   #   zone_id: Z08836952WMRI129YL5JF
   #   zone: daws88.online
   #   type: t3.micro
-  vars_files:
-    - vars.yaml
+  # vars_files:
+  #   - vars.yaml
   
   tasks:
+    - name: Download vars file from s3
+      amazon.aws.s3_object:
+        bucket: secrets-ansible
+        object: vars.yaml
+        dest: /tmp/vars.yaml
+        mode: get
+        region: "{{ region }}"
+
     - name: creating ec2 instance
       amazon.aws.ec2_instance:
         name: "{{ item }}"
