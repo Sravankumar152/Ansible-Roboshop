@@ -67,7 +67,6 @@
         zone: "{{ zone }}"
         record: "{{ item }}.{{ zone }}"
         type: A
-        value: "{{ item.set.value }}"
       loop: "{{ instance_name }}"
       tags: delete
 
