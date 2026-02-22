@@ -14,42 +14,17 @@
   tasks:
     - name: creating ec2 instance
       amazon.aws.ec2_instance:
-        name: "{{ instance_name }}"
+        name: "{{ item }}"
         region: "{{ region }}"
         image_id: "{{ ami_id }}"
         security_group: "{{ securitygroup_id }}"
         instance_type: "{{ type }}"
         wait: yes
         tags:
-          name: "{{ instance_name }}"
+          name: "{{ item }}"
+      loop: "{{ instance_name }}"
       register: ec2_output
 
     - name: print ec2_output
       ansible.builtin.debug:
         msg: "{{ ec2_output }}"
-
-    - name: Private address
-      set_fact:
-        Private_ip: "{{ ec2_output.instances[0].private_ip_address }}"
-
-    - name: public address
-      set_fact:
-        public_ip: "{{ ec2_output.instances[0].public_ip_address }}"
-
-    - name: creating dns based on server type
-      set_fact:
-        dns_ip: "{{ public_ip if instance_name == 'frontend' else Private_ip }}"
-    
-    - name: creating dns
-      amazon.aws.route53:
-        state: present
-        zone: "{{ zone }}"
-        record: "{{ instance_name }}.{{ zone }}"
-        type: A
-        value: "{{ dns_ip }}"
-        ttl: 1
-        overwrite: true
-
-    - name: Show DNS record
-      ansible.builtin.debug:
-        msg: "{{ instance_name }}.{{ zone }} → {{ dns_ip }}"

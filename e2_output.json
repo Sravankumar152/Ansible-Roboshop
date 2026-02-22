@@ -1,0 +1,721 @@
+{
+    "msg": {
+        "changed": true,
+        "deprecations": [
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_text' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_text' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Passing `warnings` to `exit_json` or `fail_json` is deprecated.",
+                "version": "2.23"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_text' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_text' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Importing 'to_native' from 'ansible.module_utils._text' is deprecated.",
+                "version": "2.24"
+            },
+            {
+                "collection_name": "ansible.builtin",
+                "deprecator": {
+                    "resolved_name": "ansible.builtin",
+                    "type": null
+                },
+                "msg": "Passing `warnings` to `exit_json` or `fail_json` is deprecated.",
+                "version": "2.23"
+            }
+        ],
+        "msg": "All items completed",
+        "results": [
+            {
+                "ansible_loop_var": "item",
+                "changed": true,
+                "failed": false,
+                "instance_ids": [
+                    "i-005cb6cd2bf0aa3dc"
+                ],
+                "instances": [
+                    {
+                        "ami_launch_index": 0,
+                        "architecture": "x86_64",
+                        "block_device_mappings": [
+                            {
+                                "device_name": "/dev/sda1",
+                                "ebs": {
+                                    "attach_time": "2026-02-22T16:56:03+00:00",
+                                    "delete_on_termination": true,
+                                    "ebs_card_index": 0,
+                                    "status": "attached",
+                                    "volume_id": "vol-0d625337001c83fca"
+                                }
+                            }
+                        ],
+                        "boot_mode": "uefi-preferred",
+                        "capacity_reservation_specification": {
+                            "capacity_reservation_preference": "open"
+                        },
+                        "client_token": "1b7a688842bd4fefa9c57a9a398d11a6",
+                        "cpu_options": {
+                            "core_count": 1,
+                            "threads_per_core": 2
+                        },
+                        "current_instance_boot_mode": "uefi",
+                        "ebs_optimized": false,
+                        "ena_support": true,
+                        "enclave_options": {
+                            "enabled": false
+                        },
+                        "hibernation_options": {
+                            "configured": false
+                        },
+                        "hypervisor": "xen",
+                        "image_id": "ami-0220d79f3f480ecf5",
+                        "instance_id": "i-005cb6cd2bf0aa3dc",
+                        "instance_type": "t3.micro",
+                        "launch_time": "2026-02-22T16:56:02+00:00",
+                        "maintenance_options": {
+                            "auto_recovery": "default",
+                            "reboot_migration": "default"
+                        },
+                        "metadata_options": {
+                            "http_endpoint": "enabled",
+                            "http_protocol_ipv6": "disabled",
+                            "http_put_response_hop_limit": 1,
+                            "http_tokens": "optional",
+                            "instance_metadata_tags": "disabled",
+                            "state": "applied"
+                        },
+                        "monitoring": {
+                            "state": "disabled"
+                        },
+                        "network_interfaces": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "ec2-13-220-141-95.compute-1.amazonaws.com",
+                                    "public_ip": "13.220.141.95"
+                                },
+                                "attachment": {
+                                    "attach_time": "2026-02-22T16:56:02+00:00",
+                                    "attachment_id": "eni-attach-076a8869d59a4dc35",
+                                    "delete_on_termination": true,
+                                    "device_index": 0,
+                                    "network_card_index": 0,
+                                    "status": "attached"
+                                },
+                                "description": "",
+                                "groups": [
+                                    {
+                                        "group_id": "sg-0439749f7885872a1",
+                                        "group_name": "FIREWALL"
+                                    }
+                                ],
+                                "interface_type": "interface",
+                                "ipv6_addresses": [],
+                                "mac_address": "02:0b:b3:2d:bf:93",
+                                "network_interface_id": "eni-02fe84b5d5bcc4251",
+                                "operator": {
+                                    "managed": false
+                                },
+                                "owner_id": "441203120752",
+                                "private_dns_name": "ip-172-31-11-251.ec2.internal",
+                                "private_ip_address": "172.31.11.251",
+                                "private_ip_addresses": [
+                                    {
+                                        "association": {
+                                            "ip_owner_id": "amazon",
+                                            "public_dns_name": "ec2-13-220-141-95.compute-1.amazonaws.com",
+                                            "public_ip": "13.220.141.95"
+                                        },
+                                        "primary": true,
+                                        "private_dns_name": "ip-172-31-11-251.ec2.internal",
+                                        "private_ip_address": "172.31.11.251"
+                                    }
+                                ],
+                                "source_dest_check": true,
+                                "status": "in-use",
+                                "subnet_id": "subnet-067855423cd8b8212",
+                                "vpc_id": "vpc-08db75b42a55e60bd"
+                            }
+                        ],
+                        "network_performance_options": {
+                            "bandwidth_weighting": "default"
+                        },
+                        "operator": {
+                            "managed": false
+                        },
+                        "placement": {
+                            "availability_zone": "us-east-1a",
+                            "availability_zone_id": "use1-az1",
+                            "group_name": "",
+                            "tenancy": "default"
+                        },
+                        "platform_details": "Red Hat Enterprise Linux",
+                        "private_dns_name": "ip-172-31-11-251.ec2.internal",
+                        "private_dns_name_options": {
+                            "enable_resource_name_dns_a_record": false,
+                            "enable_resource_name_dns_aaaa_record": false,
+                            "hostname_type": "ip-name"
+                        },
+                        "private_ip_address": "172.31.11.251",
+                        "product_codes": [],
+                        "public_dns_name": "ec2-13-220-141-95.compute-1.amazonaws.com",
+                        "public_ip_address": "13.220.141.95",
+                        "root_device_name": "/dev/sda1",
+                        "root_device_type": "ebs",
+                        "security_groups": [
+                            {
+                                "group_id": "sg-0439749f7885872a1",
+                                "group_name": "FIREWALL"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "state": {
+                            "code": 16,
+                            "name": "running"
+                        },
+                        "state_transition_reason": "",
+                        "subnet_id": "subnet-067855423cd8b8212",
+                        "tags": {
+                            "Name": "mongodb",
+                            "name": "mongodb"
+                        },
+                        "usage_operation": "RunInstances:0010",
+                        "usage_operation_update_time": "2026-02-22T16:56:02+00:00",
+                        "virtualization_type": "hvm",
+                        "vpc_id": "vpc-08db75b42a55e60bd"
+                    }
+                ],
+                "invocation": {
+                    "module_args": {
+                        "aap_callback": null,
+                        "access_key": null,
+                        "additional_info": null,
+                        "availability_zone": null,
+                        "aws_ca_bundle": null,
+                        "aws_config": null,
+                        "count": null,
+                        "cpu_credit_specification": null,
+                        "cpu_options": null,
+                        "debug_botocore_endpoint_logs": false,
+                        "detailed_monitoring": null,
+                        "ebs_optimized": null,
+                        "endpoint_url": null,
+                        "exact_count": null,
+                        "filters": null,
+                        "hibernation_options": false,
+                        "iam_instance_profile": null,
+                        "image": null,
+                        "image_id": "ami-0220d79f3f480ecf5",
+                        "instance_ids": [],
+                        "instance_initiated_shutdown_behavior": null,
+                        "instance_type": "t3.micro",
+                        "key_name": null,
+                        "launch_template": null,
+                        "license_specifications": null,
+                        "metadata_options": null,
+                        "name": "mongodb",
+                        "network": null,
+                        "network_interfaces": null,
+                        "network_interfaces_ids": null,
+                        "placement": null,
+                        "placement_group": null,
+                        "profile": null,
+                        "purge_tags": true,
+                        "region": "us-east-1",
+                        "secret_key": null,
+                        "security_group": "sg-0439749f7885872a1",
+                        "security_groups": [],
+                        "session_token": null,
+                        "source_dest_check": null,
+                        "state": "present",
+                        "tags": {
+                            "Name": "mongodb",
+                            "name": "mongodb"
+                        },
+                        "tenancy": null,
+                        "termination_protection": null,
+                        "user_data": null,
+                        "validate_certs": true,
+                        "volumes": null,
+                        "vpc_subnet_id": null,
+                        "wait": true,
+                        "wait_timeout": 600
+                    }
+                },
+                "item": "mongodb",
+                "spec": {
+                    "ClientToken": "1b7a688842bd4fefa9c57a9a398d11a6",
+                    "ImageId": "ami-0220d79f3f480ecf5",
+                    "InstanceType": "t3.micro",
+                    "MaxCount": 1,
+                    "MinCount": 1,
+                    "NetworkInterfaces": [
+                        {
+                            "DeleteOnTermination": true,
+                            "DeviceIndex": 0,
+                            "Groups": [
+                                "sg-0439749f7885872a1"
+                            ],
+                            "SubnetId": "subnet-067855423cd8b8212"
+                        }
+                    ],
+                    "TagSpecifications": [
+                        {
+                            "ResourceType": "volume",
+                            "Tags": [
+                                {
+                                    "Key": "name",
+                                    "Value": "mongodb"
+                                },
+                                {
+                                    "Key": "Name",
+                                    "Value": "mongodb"
+                                }
+                            ]
+                        },
+                        {
+                            "ResourceType": "instance",
+                            "Tags": [
+                                {
+                                    "Key": "name",
+                                    "Value": "mongodb"
+                                },
+                                {
+                                    "Key": "Name",
+                                    "Value": "mongodb"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "ansible_loop_var": "item",
+                "changed": true,
+                "failed": false,
+                "instance_ids": [
+                    "i-0ae9162546afc68d1"
+                ],
+                "instances": [
+                    {
+                        "ami_launch_index": 0,
+                        "architecture": "x86_64",
+                        "block_device_mappings": [
+                            {
+                                "device_name": "/dev/sda1",
+                                "ebs": {
+                                    "attach_time": "2026-02-22T16:56:13+00:00",
+                                    "delete_on_termination": true,
+                                    "ebs_card_index": 0,
+                                    "status": "attached",
+                                    "volume_id": "vol-03c5bc76d2d7e7ef9"
+                                }
+                            }
+                        ],
+                        "boot_mode": "uefi-preferred",
+                        "capacity_reservation_specification": {
+                            "capacity_reservation_preference": "open"
+                        },
+                        "client_token": "f6143c7636564c81a399bfc982ed1e5e",
+                        "cpu_options": {
+                            "core_count": 1,
+                            "threads_per_core": 2
+                        },
+                        "current_instance_boot_mode": "uefi",
+                        "ebs_optimized": false,
+                        "ena_support": true,
+                        "enclave_options": {
+                            "enabled": false
+                        },
+                        "hibernation_options": {
+                            "configured": false
+                        },
+                        "hypervisor": "xen",
+                        "image_id": "ami-0220d79f3f480ecf5",
+                        "instance_id": "i-0ae9162546afc68d1",
+                        "instance_type": "t3.micro",
+                        "launch_time": "2026-02-22T16:56:12+00:00",
+                        "maintenance_options": {
+                            "auto_recovery": "default",
+                            "reboot_migration": "default"
+                        },
+                        "metadata_options": {
+                            "http_endpoint": "enabled",
+                            "http_protocol_ipv6": "disabled",
+                            "http_put_response_hop_limit": 1,
+                            "http_tokens": "optional",
+                            "instance_metadata_tags": "disabled",
+                            "state": "applied"
+                        },
+                        "monitoring": {
+                            "state": "disabled"
+                        },
+                        "network_interfaces": [
+                            {
+                                "association": {
+                                    "ip_owner_id": "amazon",
+                                    "public_dns_name": "ec2-44-204-214-5.compute-1.amazonaws.com",
+                                    "public_ip": "44.204.214.5"
+                                },
+                                "attachment": {
+                                    "attach_time": "2026-02-22T16:56:12+00:00",
+                                    "attachment_id": "eni-attach-09ca8cea4015435c2",
+                                    "delete_on_termination": true,
+                                    "device_index": 0,
+                                    "network_card_index": 0,
+                                    "status": "attached"
+                                },
+                                "description": "",
+                                "groups": [
+                                    {
+                                        "group_id": "sg-0439749f7885872a1",
+                                        "group_name": "FIREWALL"
+                                    }
+                                ],
+                                "interface_type": "interface",
+                                "ipv6_addresses": [],
+                                "mac_address": "02:92:c1:4f:b9:d9",
+                                "network_interface_id": "eni-09e02066a84162301",
+                                "operator": {
+                                    "managed": false
+                                },
+                                "owner_id": "441203120752",
+                                "private_dns_name": "ip-172-31-3-137.ec2.internal",
+                                "private_ip_address": "172.31.3.137",
+                                "private_ip_addresses": [
+                                    {
+                                        "association": {
+                                            "ip_owner_id": "amazon",
+                                            "public_dns_name": "ec2-44-204-214-5.compute-1.amazonaws.com",
+                                            "public_ip": "44.204.214.5"
+                                        },
+                                        "primary": true,
+                                        "private_dns_name": "ip-172-31-3-137.ec2.internal",
+                                        "private_ip_address": "172.31.3.137"
+                                    }
+                                ],
+                                "source_dest_check": true,
+                                "status": "in-use",
+                                "subnet_id": "subnet-067855423cd8b8212",
+                                "vpc_id": "vpc-08db75b42a55e60bd"
+                            }
+                        ],
+                        "network_performance_options": {
+                            "bandwidth_weighting": "default"
+                        },
+                        "operator": {
+                            "managed": false
+                        },
+                        "placement": {
+                            "availability_zone": "us-east-1a",
+                            "availability_zone_id": "use1-az1",
+                            "group_name": "",
+                            "tenancy": "default"
+                        },
+                        "platform_details": "Red Hat Enterprise Linux",
+                        "private_dns_name": "ip-172-31-3-137.ec2.internal",
+                        "private_dns_name_options": {
+                            "enable_resource_name_dns_a_record": false,
+                            "enable_resource_name_dns_aaaa_record": false,
+                            "hostname_type": "ip-name"
+                        },
+                        "private_ip_address": "172.31.3.137",
+                        "product_codes": [],
+                        "public_dns_name": "ec2-44-204-214-5.compute-1.amazonaws.com",
+                        "public_ip_address": "44.204.214.5",
+                        "root_device_name": "/dev/sda1",
+                        "root_device_type": "ebs",
+                        "security_groups": [
+                            {
+                                "group_id": "sg-0439749f7885872a1",
+                                "group_name": "FIREWALL"
+                            }
+                        ],
+                        "source_dest_check": true,
+                        "state": {
+                            "code": 16,
+                            "name": "running"
+                        },
+                        "state_transition_reason": "",
+                        "subnet_id": "subnet-067855423cd8b8212",
+                        "tags": {
+                            "Name": "redis",
+                            "name": "redis"
+                        },
+                        "usage_operation": "RunInstances:0010",
+                        "usage_operation_update_time": "2026-02-22T16:56:12+00:00",
+                        "virtualization_type": "hvm",
+                        "vpc_id": "vpc-08db75b42a55e60bd"
+                    }
+                ],
+                "invocation": {
+                    "module_args": {
+                        "aap_callback": null,
+                        "access_key": null,
+                        "additional_info": null,
+                        "availability_zone": null,
+                        "aws_ca_bundle": null,
+                        "aws_config": null,
+                        "count": null,
+                        "cpu_credit_specification": null,
+                        "cpu_options": null,
+                        "debug_botocore_endpoint_logs": false,
+                        "detailed_monitoring": null,
+                        "ebs_optimized": null,
+                        "endpoint_url": null,
+                        "exact_count": null,
+                        "filters": null,
+                        "hibernation_options": false,
+                        "iam_instance_profile": null,
+                        "image": null,
+                        "image_id": "ami-0220d79f3f480ecf5",
+                        "instance_ids": [],
+                        "instance_initiated_shutdown_behavior": null,
+                        "instance_type": "t3.micro",
+                        "key_name": null,
+                        "launch_template": null,
+                        "license_specifications": null,
+                        "metadata_options": null,
+                        "name": "redis",
+                        "network": null,
+                        "network_interfaces": null,
+                        "network_interfaces_ids": null,
+                        "placement": null,
+                        "placement_group": null,
+                        "profile": null,
+                        "purge_tags": true,
+                        "region": "us-east-1",
+                        "secret_key": null,
+                        "security_group": "sg-0439749f7885872a1",
+                        "security_groups": [],
+                        "session_token": null,
+                        "source_dest_check": null,
+                        "state": "present",
+                        "tags": {
+                            "Name": "redis",
+                            "name": "redis"
+                        },
+                        "tenancy": null,
+                        "termination_protection": null,
+                        "user_data": null,
+                        "validate_certs": true,
+                        "volumes": null,
+                        "vpc_subnet_id": null,
+                        "wait": true,
+                        "wait_timeout": 600
+                    }
+                },
+                "item": "redis",
+                "spec": {
+                    "ClientToken": "f6143c7636564c81a399bfc982ed1e5e",
+                    "ImageId": "ami-0220d79f3f480ecf5",
+                    "InstanceType": "t3.micro",
+                    "MaxCount": 1,
+                    "MinCount": 1,
+                    "NetworkInterfaces": [
+                        {
+                            "DeleteOnTermination": true,
+                            "DeviceIndex": 0,
+                            "Groups": [
+                                "sg-0439749f7885872a1"
+                            ],
+                            "SubnetId": "subnet-067855423cd8b8212"
+                        }
+                    ],
+                    "TagSpecifications": [
+                        {
+                            "ResourceType": "volume",
+                            "Tags": [
+                                {
+                                    "Key": "name",
+                                    "Value": "redis"
+                                },
+                                {
+                                    "Key": "Name",
+                                    "Value": "redis"
+                                }
+                            ]
+                        },
+                        {
+                            "ResourceType": "instance",
+                            "Tags": [
+                                {
+                                    "Key": "name",
+                                    "Value": "redis"
+                                },
+                                {
+                                    "Key": "Name",
+                                    "Value": "redis"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "skipped": false,
+        "warnings": [
+            "packaging.version Python module not installed, unable to check AWS SDK versions",
+            "packaging.version Python module not installed, unable to check AWS SDK versions"
+        ]
+    }
+}
