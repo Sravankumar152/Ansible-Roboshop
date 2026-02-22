@@ -11,8 +11,7 @@
   #   type: t3.micro
   # vars_files:
   #   - vars.yaml
-  
-  tasks:
+  pretasks:
     - name: Download vars file from s3
       amazon.aws.s3_object:
         bucket: secrets-ansible
@@ -20,13 +19,13 @@
         dest: /tmp/vars.yaml
         mode: get
         region: us-east-1
-        tags: always
     
     - name: load variables from vars.yaml
       ansible.builtin.include_vars:
         file: /tmp/vars.yaml
-      tags: always
-
+  
+  
+  tasks:
     - name: creating ec2 instance
       amazon.aws.ec2_instance:
         name: "{{ item }}"
