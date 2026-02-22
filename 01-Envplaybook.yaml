@@ -44,3 +44,29 @@
       ansible.builtin.debug:
         msg: "{{ item.item }}.{{ zone }}"
       loop: "{{ ec2_output.results }}"
+
+    - name: deleting ec2 instance
+      amazon.aws.ec2_instance:
+        name: "{{ item }}"
+        region: "{{ region }}"
+        state: absent
+        wait: yes
+      loop: "{{ instance_name }}"
+      register: ec2_delete_output
+      tags: delete
+
+    - name: deleting dns records
+      amazon.aws.route53:
+        state: absent
+        zone: "{{ zone }}"
+        record: "{{ item }}.{{ zone }}"
+        type: A
+        value: "dummy"
+      loop: "{{ instance_name }}"
+      tags: delete
+
+    - name: Show deleted resources
+      ansible.builtin.debug:
+        msg: "Deleted: {{ item }}.{{ zone }}"
+      loop: "{{ instance_name }}"
+      tags: delete
