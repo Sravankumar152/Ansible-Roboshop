@@ -1,5 +1,5 @@
 - name: creating ec2 instance and update dns
-  hosts: localhost
+  hosts: all
   connection: local
   # vars:
   #   ami_id: ami-0220d79f3f480ecf5
@@ -23,6 +23,10 @@
         tags:
           name: "{{ instance_name }}"
       register: ec2_output
+
+    - name: print ec2_output
+      ansible.builtin.debug:
+        msg: "{{ ec2_output }}"
 
     - name: Private address
       set_fact:
