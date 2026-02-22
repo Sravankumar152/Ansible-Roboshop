@@ -18,7 +18,7 @@
         object: vars.yaml
         dest: /tmp/vars.yaml
         mode: get
-        region: "{{ region }}"
+        region: us-east-1
 
     - name: creating ec2 instance
       amazon.aws.ec2_instance:
